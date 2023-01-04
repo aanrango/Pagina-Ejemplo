@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gamers Vault</title>
+        <link href="StylesPag1.css" type="text/css" rel="stylesheet">
+        <script src="Inicio.js"></script>
+    </head>
+    <body>
+        <div class="caja">
+            <header>                
+                <h1>Gamers Vault</h1>
+                
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="Clasicos.html">Juegos Clasicos</a></li>
+                    <li><a href="modernos.html">Juegos Modernos</a></li>
+                    <li><a href="competitivo.html">Competitivo</a></li>                    
+                </ul>
+            </nav>
+            <div class='contenido'>
+                <div class="principal"> 
+                    <article>
+                        <h1>Bienvenido!</h1>
+                        En esta página se podrá encontrar información de algunos de los juegos más importantes a lo largo de la historia.
+                        Anímate y entérate más de los juegos que han marcado una época.
+                    </article>
+                    <article>
+                        <h1>Tienda</h1>
+                        Haz <a href="Tienda.html">Click aqui</a> para ir a la tienda de la página!
+                    </article>
+                    <article>
+                        <h1>Reproductor de video</h1>
+                        <section id="reproductor">
+                            <video id="medio" width="500" height="400">
+                                <source src="video1.mp4">
+                            </video>
+                            <nav id="video">
+                                <div id="botones">
+                                    <input type="button" id="reproducir" value=">">
+                                    <input type="button" id="silenciar" value="Silencio">
+                                </div>
+                                <div id="barra">
+                                    <div id="progreso"></div>
+                                </div>
+                                <div id="control">
+                                    <input type="range" id="volumen" min="0" max="1" step="0.1"
+                                    value="0.6">
+                                </div>
+                                <div class=recuperar></div>
+                            </nav>
+                        </section>
+                    </article>
+                    <article>
+                        <h1>Herramientas</h1>
+                        <p>Si quieres sumar matrices, haz <a href="Suma.html">click aqui</a></p>
+                        Si quieres multiplicar matrices, haz <a href="Multiplicacion.html">click aqui</a>
+                    </article>
+                </div>
+                <aside>
+                    <img src="./images/bloque.gif" style="width: 3em ; padding-left: 45%; padding-bottom: 1em;"><br>
+                    Escoge una de las categorías para investigar más sobre el tipo de juegos que desees.
+                </aside>
+            </div>
+            <footer>
+                Andrés Anrango <br>
+                Copyright &copy; 2021
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,204 @@
+@font-face {
+    font-family: mario;
+    src: url(./fonts/SuperMario256.ttf);
+}
+
+
+body{
+    margin:0;    
+    padding: 0;
+    background-image: url(./images/nubes.jpeg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+header{    
+    text-align: center;
+    background-color: rgb(23, 161, 23);      
+    color:gold; 
+    padding-top: 2em;
+    height: 6em; 
+    background-image: url("./images/MarioCamina.gif");
+    background-size: 5em;
+    background-position-x: 0%;
+    background-position-y: 1em;
+    background-repeat: no-repeat;    
+    font-family: mario;
+}
+
+header h1{
+    margin:0;
+    font-size:3.5em;
+}
+
+nav{
+    background-color:rgb(0, 221, 250)  ;
+    padding: 0% 2%;
+    height: 40px;
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: row;
+}
+
+li{
+    display: inline-block;     
+    text-align: center;        
+    padding: 0.65em 2em 0px 3em;
+    width: 25%;
+}
+
+a{
+    text-decoration: none;
+    color:red;
+    font-family:mario;
+    padding-top:0.65em;
+    padding-bottom: 0.85em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    
+}
+
+a:hover{background-color:rgb(245, 200, 0);}
+
+.contenido{
+    margin-bottom: 0.2em;
+    display:flex;
+    flex-direction:row;
+    width: 96%;
+    padding: 2%;    
+}
+
+.principal{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+article{
+    background-color:rgb(247, 56, 56, .5);
+    text-align: justify;    
+    float:left;
+    width:65%;    
+    padding-left:2em; 
+    padding-right:2em; 
+    padding-bottom: 1em;
+    border-radius:24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5%;
+}
+
+article img{
+    padding-left: 0%;
+    max-width: 50%;
+}
+
+article h1{
+    padding: 0;
+    text-align: center;
+    color:springgreen;
+}
+
+aside{
+    background-color: rgb(101, 35, 207, .5);
+    /*position: relative;*/
+    float: right;
+    margin-left: 3em;
+    width: 30%;
+    padding:2%;
+    padding-top: 3em;
+    border-radius:24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+aside h1{
+    padding: 0;
+    text-align: center;
+    color:springgreen;
+}
+
+aside img{
+    padding-left: 0%;
+}
+
+footer{
+    float:left;
+    background-color: rgba(255, 166, 0, 0.5);
+    border-radius:24px;
+    padding:1em;
+    margin-top:10%;
+    margin-left: 2%;
+    width: 20%;
+    text-align: center;
+}
+
+
+@media(max-width: 1107px){
+    a:hover{
+        background:none
+    }
+    nav{
+        height: 55px;
+    }
+}
+
+@media(max-width:720px){
+    header{
+        background-image: none;
+    }
+
+    nav{
+        width:100%;
+        height:100%;
+        padding:0%;
+        
+    }
+
+    ul{
+        display: block;
+        
+    }
+
+    li{
+        display:block;
+        margin-right:0px;
+        text-align: center;
+        text-align: center;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+    }
+
+    a:hover{background-color:rgb(245, 200, 0);}
+
+    .contenido{
+        display: block;
+    }
+    article{        
+        width: 90%;               
+    }
+
+    aside{
+        width: 90%;
+        margin-top: 5em;
+        padding: 5%;
+        padding-bottom: 1em;
+        
+    }
+
+    footer{
+        width: 50%;
+    }
+}
+
+@media(max-width: 506px){
+    header{
+        height:8em;        
+    }
+}
+

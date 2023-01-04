@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gamers Vault</title>
+        <link href="StylesMultiplicacion.css" type="text/css" rel="stylesheet">
+        <script src="Multiplicacion.js"></script>
+    </head>
+    <body>
+        <div class="caja">
+            <header>                
+                <h1>Gamers Vault</h1>
+                
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Clasicos.html">Juegos Clasicos</a></li>
+                    <li><a href="modernos.html">Juegos Modernos</a></li>
+                    <li><a href="competitivo.html">Competitivo</a></li>                    
+                </ul>
+            </nav>
+            <div class='contenido'>
+                <div class="principal"> 
+                    <article>
+                        <div id="contenedor">
+                            <h1>MULTIPLICACIONES CON MATRICES</h1>
+                            <h4>Ingrese el número de filas de su primera matriz</h4>
+                            <input type="number" id="filas">
+                            <h4>Ingrese el número de columnas de su primera matriz</h4>
+                            <input type="number" id="columnas">
+                            <h4>Ingrese el número de filas de su segunda matriz</h4>
+                            <input type="number" id="filas2" onclick="filasSegunda()">
+                            <h4>Ingrese el número de columnas de su segunda matriz</h4>
+                            <input type="number" id="columnas2">
+                             <br>
+                             <br>
+                             <button type="button" onclick="validacion()">Aceptar</button>
+                            <section id="proceso"></section>
+                            <aside id="respuesta"></aside>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <footer>
+                Andrés Anrango <br>
+                Copyright &copy; 2021
+            </footer>
+        </div>
+    </body>
+</html>
